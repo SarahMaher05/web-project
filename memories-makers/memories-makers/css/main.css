@@ -1,0 +1,172 @@
+/* 
+    Colors variables
+*/
+:root {
+  --highlight: #f6b750;
+  --shark-50: #f6f7f9;
+  --shark-100: #edeef1;
+  --shark-200: #d7dbe0;
+  --shark-300: #b4bcc5;
+  --shark-400: #8b97a5;
+  --shark-500: #6d7a8a;
+  --shark-600: #576372;
+  --shark-700: #47505d;
+  --shark-800: #3e454e;
+  --shark-900: #363c44;
+  --shark-950: #212429;
+
+  /* Link Water Colors */
+  --link-water-50: #f3f7fb;
+  --link-water-100: #dbe5f1;
+  --link-water-200: #d0deed;
+  --link-water-300: #afc8e1;
+  --link-water-400: #89abd1;
+  --link-water-500: #6d90c4;
+  --link-water-600: #5a79b6;
+  --link-water-700: #4f68a6;
+  --link-water-800: #455788;
+  --link-water-900: #3b496d;
+  --link-water-950: #272f44;
+
+  /* Casablanca Colors */
+  --casablanca-50: #fef8ec;
+  --casablanca-100: #fcebc9;
+  --casablanca-200: #f9d48e;
+  --casablanca-300: #f6b750;
+  --casablanca-400: #f49f2b;
+  --casablanca-500: #ed7c13;
+  --casablanca-600: #d2590d;
+  --casablanca-700: #ae3d0f;
+  --casablanca-800: #8e2f12;
+  --casablanca-900: #742813;
+  --casablanca-950: #431205;
+
+  /* White Scale */
+  --white-50: #ffffff;
+  --white-100: #efefef;
+  --white-200: #dcdcdc;
+  --white-300: #bdbdbd;
+  --white-400: #989898;
+  --white-500: #7c7c7c;
+  --white-600: #656565;
+  --white-700: #525252;
+  --white-800: #464646;
+  --white-900: #3d3d3d;
+  --white-950: #292929;
+}
+.resize {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  text-decoration: none;
+  color: var(--shark-950);
+}
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: var(--white-50);
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--shark-950);
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--highlight);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+/* System design */
+.text-shark-950 {
+  color: var(--shark-950);
+}
+
+.gap-8 {
+  gap: 56px;
+}
+/* Buttons */
+.btn-custom {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-solid {
+  background-color: var(--casablanca-300);
+  color: var(--shark-950);
+  border-color: var(--casablanca-300);
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: var(--shark-800);
+  border-color: var(--shark-800);
+}
+.btn-outlined-yellow {
+  background-color: transparent;
+  border-color: var(--highlight);
+  color: var(--highlight);
+}
+.btn-solid:hover {
+  background-color: var(--casablanca-400);
+  border-color: var(--casablanca-400);
+}
+
+.btn-outlined:hover {
+  background-color: var(--shark-950);
+  color: var(--white-100);
+}
+.btn-outlined-yellow:hover {
+  background-color: var(--highlight);
+  color: var(--white-100);
+}
+
+.text-responsive {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.text-highlight {
+  color: var(--highlight);
+}
+
+/* Footer */
+.footer-container {
+  background-color: var(--link-water-950);
+  padding: 3rem;
+}
